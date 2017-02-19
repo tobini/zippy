@@ -47,67 +47,67 @@ public class GeneratorBenchmarks {
     @Test
     public void python_graph_bench() {
         Path script = Paths.get("python-graph-bench.py");
-        assertBenchNoError(script, "200");
+        assertBenchNoError(script, new String[]{"200"});
         }
 
     @Test
     public void pads_eratosthenes_timed() {
         Path script = Paths.get("pads-eratosthenes-timed.py");
-        assertBenchNoError(script, "100000");
+        assertBenchNoError(script, new String[]{"100000"});
         }
 
     @Test
     public void pads_lyndon() {
         Path script = Paths.get("pads-lyndon.py");
-        assertBenchNoError(script, "100000000");
+        assertBenchNoError(script, new String[]{"100000000"});
         }
 
     @Test
     public void ai_nqueen_timed() {
         Path script = Paths.get("ai-nqueen-timed.py");
-        assertBenchNoError(script, "10");
+        assertBenchNoError(script, new String[]{"10"});
         }
 
     @Test
     public void sympy_bench() {
         Path script = Paths.get("sympy-bench.py");
-        assertBenchNoError(script, "20000");
+        assertBenchNoError(script, new String[]{"20000"});
         }
 
     @Test
     public void pymaging_bench() {
         Path script = Paths.get("pymaging-bench.py");
-        assertBenchNoError(script, "5000");
+        assertBenchNoError(script, new String[]{"5000"});
         }
 
     @Test
     public void euler11_timed() {
         Path script = Paths.get("euler11-timed.py");
-        assertBenchNoError(script, "10000");
+        assertBenchNoError(script, new String[]{"10000"});
         }
 
     @Test
     public void pads_integerpartitions() {
         Path script = Paths.get("pads-integerpartitions.py");
-        assertBenchNoError(script, "700");
+        assertBenchNoError(script, new String[]{"700"});
         }
 
     @Test
     public void simplejson_bench() {
         Path script = Paths.get("simplejson-bench.py");
-        assertBenchNoError(script, "10000");
+        assertBenchNoError(script, new String[]{"10000"});
         }
 
     @Test
     public void euler31_timed() {
         Path script = Paths.get("euler31-timed.py");
-        assertBenchNoError(script, "200");
+        assertBenchNoError(script, new String[]{"200"});
         }
 
     @Test
     public void whoosh_bench() {
         Path script = Paths.get("whoosh-bench.py");
-        assertBenchNoError(script, "5000");
+        assertBenchNoError(script, new String[]{"5000"});
         }
 
 }

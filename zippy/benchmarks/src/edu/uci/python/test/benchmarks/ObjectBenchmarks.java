@@ -41,31 +41,31 @@ public class ObjectBenchmarks {
     @Test
     public void pypy_go_timed() {
         Path script = Paths.get("pypy-go-timed.py");
-        assertBenchNoError(script, "50");
+        assertBenchNoError(script, new String[]{"50"});
         }
 
     @Test
     public void pypy_chaos_timed() {
         Path script = Paths.get("pypy-chaos-timed.py");
-        assertBenchNoError(script, "1000");
+        assertBenchNoError(script, new String[]{"1000"});
         }
 
     @Test
     public void bm_float_timed() {
         Path script = Paths.get("bm-float-timed.py");
-        assertBenchNoError(script, "1000");
+        assertBenchNoError(script, new String[]{"1000"});
         }
 
     @Test
     public void richards3_timed() {
         Path script = Paths.get("richards3-timed.py");
-        assertBenchNoError(script, "200");
+        assertBenchNoError(script, new String[]{"200"});
         }
 
     @Test
     public void pypy_deltablue() {
         Path script = Paths.get("pypy-deltablue.py");
-        assertBenchNoError(script, "2000");
+        assertBenchNoError(script, new String[]{"2000"});
         }
 
 }

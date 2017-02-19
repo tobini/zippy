@@ -59,139 +59,139 @@ public class MicroBenchmarks {
     @Test
     public void object_allocate() {
         Path script = Paths.get("object-allocate.py");
-        assertBenchNoError(script, "0");
+        assertBenchNoError(script, new String[]{"0"});
         }
 
     @Test
     public void attribute_access() {
         Path script = Paths.get("attribute-access.py");
-        assertBenchNoError(script, "0");
+        assertBenchNoError(script, new String[]{"0"});
         }
 
     @Test
     public void generator_notaligned() {
         Path script = Paths.get("generator-notaligned.py");
-        assertBenchNoError(script, "0");
+        assertBenchNoError(script, new String[]{"0"});
         }
 
     @Test
     public void arith_binop() {
         Path script = Paths.get("arith-binop.py");
-        assertBenchNoError(script, "0");
+        assertBenchNoError(script, new String[]{"0"});
         }
 
     @Test
     public void special_len() {
         Path script = Paths.get("special-len.py");
-        assertBenchNoError(script, "0");
+        assertBenchNoError(script, new String[]{"0"});
         }
 
     @Test
     public void function_call() {
         Path script = Paths.get("function-call.py");
-        assertBenchNoError(script, "0");
+        assertBenchNoError(script, new String[]{"0"});
         }
 
     @Test
     public void attribute_access_polymorphic() {
         Path script = Paths.get("attribute-access-polymorphic.py");
-        assertBenchNoError(script, "0");
+        assertBenchNoError(script, new String[]{"0"});
         }
 
     @Test
     public void object_layout_change() {
         Path script = Paths.get("object-layout-change.py");
-        assertBenchNoError(script, "0");
+        assertBenchNoError(script, new String[]{"0"});
         }
 
     @Test
     public void list_iterating() {
         Path script = Paths.get("list-iterating.py");
-        assertBenchNoError(script, "0");
+        assertBenchNoError(script, new String[]{"0"});
         }
 
     @Test
     public void generator() {
         Path script = Paths.get("generator.py");
-        assertBenchNoError(script, "0");
+        assertBenchNoError(script, new String[]{"0"});
         }
 
     @Test
     public void for_range() {
         Path script = Paths.get("for-range.py");
-        assertBenchNoError(script, "0");
+        assertBenchNoError(script, new String[]{"0"});
         }
 
     @Test
     public void list_comp() {
         Path script = Paths.get("list-comp.py");
-        assertBenchNoError(script, "0");
+        assertBenchNoError(script, new String[]{"0"});
         }
 
     @Test
     public void attribute_bool() {
         Path script = Paths.get("attribute-bool.py");
-        assertBenchNoError(script, "0");
+        assertBenchNoError(script, new String[]{"0"});
         }
 
     @Test
     public void math_sqrt() {
         Path script = Paths.get("math-sqrt.py");
-        assertBenchNoError(script, "0");
+        assertBenchNoError(script, new String[]{"0"});
         }
 
     @Test
     public void boolean_logic() {
         Path script = Paths.get("boolean-logic.py");
-        assertBenchNoError(script, "0");
+        assertBenchNoError(script, new String[]{"0"});
         }
 
     @Test
     public void generator_expression() {
         Path script = Paths.get("generator-expression.py");
-        assertBenchNoError(script, "0");
+        assertBenchNoError(script, new String[]{"0"});
         }
 
     @Test
     public void builtin_len() {
         Path script = Paths.get("builtin-len.py");
-        assertBenchNoError(script, "0");
+        assertBenchNoError(script, new String[]{"0"});
         }
 
     @Test
     public void builtin_len_tuple() {
         Path script = Paths.get("builtin-len-tuple.py");
-        assertBenchNoError(script, "0");
+        assertBenchNoError(script, new String[]{"0"});
         }
 
     @Test
     public void call_method_polymorphic() {
         Path script = Paths.get("call-method-polymorphic.py");
-        assertBenchNoError(script, "0");
+        assertBenchNoError(script, new String[]{"0"});
         }
 
     @Test
     public void special_add_int() {
         Path script = Paths.get("special-add-int.py");
-        assertBenchNoError(script, "0");
+        assertBenchNoError(script, new String[]{"0"});
         }
 
     @Test
     public void genexp_builtin_call() {
         Path script = Paths.get("genexp-builtin-call.py");
-        assertBenchNoError(script, "0");
+        assertBenchNoError(script, new String[]{"0"});
         }
 
     @Test
     public void list_indexing() {
         Path script = Paths.get("list-indexing.py");
-        assertBenchNoError(script, "0");
+        assertBenchNoError(script, new String[]{"0"});
         }
 
     @Test
     public void special_add() {
         Path script = Paths.get("special-add.py");
-        assertBenchNoError(script, "0");
+        assertBenchNoError(script, new String[]{"0"});
         }
 
 }

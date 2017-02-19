@@ -60,145 +60,145 @@ public class Benchmarks {
     @Test
     public void richards3_timed() {
         Path script = Paths.get("richards3-timed.py");
-        assertBenchNoError(script, "200");
+        assertBenchNoError(script, new String[]{"200"});
         }
 
     @Test
     public void pads_eratosthenes_timed() {
         Path script = Paths.get("pads-eratosthenes-timed.py");
-        assertBenchNoError(script, "100000");
+        assertBenchNoError(script, new String[]{"100000"});
         }
 
     @Test
     public void pads_lyndon() {
         Path script = Paths.get("pads-lyndon.py");
-        assertBenchNoError(script, "100000000");
+        assertBenchNoError(script, new String[]{"100000000"});
         }
 
     @Test
     public void pidigits_timed() {
         Path script = Paths.get("pidigits-timed.py");
-        assertBenchNoError(script, "0");
+        assertBenchNoError(script, new String[]{"0"});
         }
 
     @Test
     public void pymaging_bench() {
         Path script = Paths.get("pymaging-bench.py");
-        assertBenchNoError(script, "5000");
+        assertBenchNoError(script, new String[]{"5000"});
         }
 
     @Test
     public void pypy_chaos_timed() {
         Path script = Paths.get("pypy-chaos-timed.py");
-        assertBenchNoError(script, "1000");
+        assertBenchNoError(script, new String[]{"1000"});
         }
 
     @Test
     public void euler11_timed() {
         Path script = Paths.get("euler11-timed.py");
-        assertBenchNoError(script, "10000");
+        assertBenchNoError(script, new String[]{"10000"});
         }
 
     @Test
     public void pads_integerpartitions() {
         Path script = Paths.get("pads-integerpartitions.py");
-        assertBenchNoError(script, "700");
+        assertBenchNoError(script, new String[]{"700"});
         }
 
     @Test
     public void pypy_go_timed() {
         Path script = Paths.get("pypy-go-timed.py");
-        assertBenchNoError(script, "50");
+        assertBenchNoError(script, new String[]{"50"});
         }
 
     @Test
     public void whoosh_bench() {
         Path script = Paths.get("whoosh-bench.py");
-        assertBenchNoError(script, "5000");
+        assertBenchNoError(script, new String[]{"5000"});
         }
 
     @Test
     public void nbody3t() {
         Path script = Paths.get("nbody3t.py");
-        assertBenchNoError(script, "5000000");
+        assertBenchNoError(script, new String[]{"5000000"});
         }
 
     @Test
     public void python_graph_bench() {
         Path script = Paths.get("python-graph-bench.py");
-        assertBenchNoError(script, "200");
+        assertBenchNoError(script, new String[]{"200"});
         }
 
     @Test
     public void meteor3t() {
         Path script = Paths.get("meteor3t.py");
-        assertBenchNoError(script, "2098");
+        assertBenchNoError(script, new String[]{"2098"});
         }
 
     @Test
     public void ai_nqueen_timed() {
         Path script = Paths.get("ai-nqueen-timed.py");
-        assertBenchNoError(script, "10");
+        assertBenchNoError(script, new String[]{"10"});
         }
 
     @Test
     public void mandelbrot3t() {
         Path script = Paths.get("mandelbrot3t.py");
-        assertBenchNoError(script, "4000");
+        assertBenchNoError(script, new String[]{"4000"});
         }
 
     @Test
     public void sympy_bench() {
         Path script = Paths.get("sympy-bench.py");
-        assertBenchNoError(script, "20000");
+        assertBenchNoError(script, new String[]{"20000"});
         }
 
     @Test
     public void pypy_deltablue() {
         Path script = Paths.get("pypy-deltablue.py");
-        assertBenchNoError(script, "2000");
+        assertBenchNoError(script, new String[]{"2000"});
         }
 
     @Test
     public void bm_float_timed() {
         Path script = Paths.get("bm-float-timed.py");
-        assertBenchNoError(script, "1000");
+        assertBenchNoError(script, new String[]{"1000"});
         }
 
     @Test
     public void simplejson_bench() {
         Path script = Paths.get("simplejson-bench.py");
-        assertBenchNoError(script, "10000");
+        assertBenchNoError(script, new String[]{"10000"});
         }
 
     @Test
     public void euler31_timed() {
         Path script = Paths.get("euler31-timed.py");
-        assertBenchNoError(script, "200");
+        assertBenchNoError(script, new String[]{"200"});
         }
 
     @Test
     public void fasta3t() {
         Path script = Paths.get("fasta3t.py");
-        assertBenchNoError(script, "25000000");
+        assertBenchNoError(script, new String[]{"25000000"});
         }
 
     @Test
     public void binarytrees3t() {
         Path script = Paths.get("binarytrees3t.py");
-        assertBenchNoError(script, "18");
+        assertBenchNoError(script, new String[]{"18"});
         }
 
     @Test
     public void fannkuchredux3t() {
         Path script = Paths.get("fannkuchredux3t.py");
-        assertBenchNoError(script, "11");
+        assertBenchNoError(script, new String[]{"11"});
         }
 
     @Test
     public void spectralnorm3t() {
         Path script = Paths.get("spectralnorm3t.py");
-        assertBenchNoError(script, "3000");
+        assertBenchNoError(script, new String[]{"3000"});
         }
 
 }

@@ -47,67 +47,67 @@ public class TestBenchmarks {
     @Test
     public void richards3() {
         Path script = Paths.get("richards3.py");
-        assertBenchNoError(script, "3");
+        assertBenchNoError(script, new String[]{"3"});
         }
 
     @Test
     public void binarytrees3() {
         Path script = Paths.get("binarytrees3.py");
-        assertBenchNoError(script, "12");
+        assertBenchNoError(script, new String[]{"12"});
         }
 
     @Test
     public void fannkuchredux3() {
         Path script = Paths.get("fannkuchredux3.py");
-        assertBenchNoError(script, "9");
+        assertBenchNoError(script, new String[]{"9"});
         }
 
     @Test
     public void pidigits() {
         Path script = Paths.get("pidigits.py");
-        assertBenchNoError(script, "0");
+        assertBenchNoError(script, new String[]{"0"});
         }
 
     @Test
     public void bm_ai() {
         Path script = Paths.get("bm-ai.py");
-        assertBenchNoError(script, "0");
+        assertBenchNoError(script, new String[]{"0"});
         }
 
     @Test
     public void meteor3() {
         Path script = Paths.get("meteor3.py");
-        assertBenchNoError(script, "2098");
+        assertBenchNoError(script, new String[]{"2098"});
         }
 
     @Test
     public void spectralnorm3() {
         Path script = Paths.get("spectralnorm3.py");
-        assertBenchNoError(script, "500");
+        assertBenchNoError(script, new String[]{"500"});
         }
 
     @Test
     public void mandelbrot3() {
         Path script = Paths.get("mandelbrot3.py");
-        assertBenchNoError(script, "600");
+        assertBenchNoError(script, new String[]{"600"});
         }
 
     @Test
     public void pypy_go() {
         Path script = Paths.get("pypy-go.py");
-        assertBenchNoError(script, "1");
+        assertBenchNoError(script, new String[]{"1"});
         }
 
     @Test
     public void fasta3() {
         Path script = Paths.get("fasta3.py");
-        assertBenchNoError(script, "250000");
+        assertBenchNoError(script, new String[]{"25000"});
         }
 
     @Test
     public void nbody3() {
         Path script = Paths.get("nbody3.py");
-        assertBenchNoError(script, "100000");
+        assertBenchNoError(script, new String[]{"100000"});
         }
 
 }
