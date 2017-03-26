@@ -94,7 +94,7 @@ public class PythonTests {
             Source source = getTestCode(code);
             RunScript.runThrowableScript(new String[0], source, context);
         } catch (Throwable err) {
-            error = err.toString();
+            error = err.toString().replaceAll("\r\n", "\n");
         }
 
         assertEquals(expected, error);
@@ -124,6 +124,7 @@ public class PythonTests {
         String output = getFileContent(getTestFile(expected));
         PythonContext context = getContext(printStream, System.err);
         RunScript.runScript(args, source, scriptFile.getParent(), context);
+        output = output.replaceAll("\r\n", "\n");
         String result = byteArray.toString().replaceAll("\r\n", "\n");
         assertEquals(output, result);
     }

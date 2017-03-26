@@ -64,6 +64,10 @@ public class ImportManager {
         if (workingDir.endsWith("/zippy/edu.uci.python.test")) {
             workingDir = workingDir.replaceAll("/zippy/edu.uci.python.test", "");
         }
+        // Hack for Windows
+        if (workingDir.endsWith("\\zippy\\edu.uci.python.test")) {
+            workingDir = workingDir.replaceAll("\\\\zippy\\\\edu.uci.python.test", "");
+        }
 
         String librayPath = workingDir + File.separatorChar + "zippy" + File.separatorChar + "lib-python" + File.separatorChar + "3";
         return librayPath;
@@ -76,7 +80,10 @@ public class ImportManager {
         if (workingDir.endsWith("/zippy/edu.uci.python.test")) {
             workingDir = workingDir.replaceAll("/zippy/edu.uci.python.test", "");
         }
-
+        // Hack for Windows
+        if (workingDir.endsWith("\\zippy\\edu.uci.python.test")) {
+            workingDir = workingDir.replaceAll("\\\\zippy\\\\edu.uci.python.test", "");
+        }
         String librayPath = workingDir + File.separatorChar + "zippy" + File.separatorChar + "lib-python-extras";
         return librayPath;
     }
