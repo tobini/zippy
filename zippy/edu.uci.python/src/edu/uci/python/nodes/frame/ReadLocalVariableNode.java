@@ -28,11 +28,22 @@ import com.oracle.truffle.api.frame.*;
 import com.oracle.truffle.api.nodes.*;
 
 import edu.uci.python.ast.VisitorIF;
+import edu.uci.python.interpreter.nodes.MateLocalVariableNode;
 import edu.uci.python.nodes.*;
+import edu.uci.python.interpreter.MateNode;
 import edu.uci.python.nodes.truffle.*;
 
 @NodeInfo(shortName = "read_local")
-public abstract class ReadLocalVariableNode extends ReadVariableNode {
+public abstract class ReadLocalVariableNode extends ReadVariableNode implements MateNode {
+    @Override
+    public void wrapIntoMateNode() {
+
+    }
+
+    @Override
+    public Node asMateNode() {
+        return new MateLocalVariableNode.MateReadLocalVariableNode(this);
+    }
 
     public ReadLocalVariableNode(FrameSlot frameSlot) {
         super(frameSlot);
